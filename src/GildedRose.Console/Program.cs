@@ -19,7 +19,7 @@ namespace GildedRose.Console
                                               new Item {Name = "Sulfuras, Hand of Ragnaros", SellIn = 0, Quality = 80},
                                               new Item
                                                   {
-                                                      Name = "Backstage passes to a TAFKAL80ETC concert",
+                                                      Name = "Backstage passes to a Justin Bieber concert",
                                                       SellIn = 15,
                                                       Quality = 20
                                                   },
@@ -31,14 +31,13 @@ namespace GildedRose.Console
             app.UpdateQuality();
 
             System.Console.ReadKey();
-
         }
 
         public void UpdateQuality()
         {
             for (var i = 0; i < Items.Count; i++)
             {
-                if (Items[i].Name != "Aged Brie" && Items[i].Name != "Backstage passes to a TAFKAL80ETC concert")
+                if (Items[i].Name != "Aged Brie" && Items[i].Name != "Backstage passes to a Justin Bieber concert")
                 {
                     if (Items[i].Quality > 0)
                     {
@@ -54,7 +53,7 @@ namespace GildedRose.Console
                     {
                         Items[i].Quality = Items[i].Quality + 1;
 
-                        if (Items[i].Name == "Backstage passes to a TAFKAL80ETC concert")
+                        if (Items[i].Name == "Backstage passes to a Justin Bieber concert")
                         {
                             if (Items[i].SellIn < 11)
                             {
@@ -84,7 +83,7 @@ namespace GildedRose.Console
                 {
                     if (Items[i].Name != "Aged Brie")
                     {
-                        if (Items[i].Name != "Backstage passes to a TAFKAL80ETC concert")
+                        if (Items[i].Name != "Backstage passes to a Justin Bieber concert")
                         {
                             if (Items[i].Quality > 0)
                             {
@@ -120,5 +119,4 @@ namespace GildedRose.Console
 
         public int Quality { get; set; }
     }
-
 }
