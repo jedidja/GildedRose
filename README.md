@@ -58,7 +58,8 @@ void UpdateQuality()
 {
     for (var i = 0; i < Items.Count; i++)
     {
-        if (Items[i].Name != "Aged Brie" && Items[i].Name != "Backstage passes to a Justin Beiber concert")
+        if (Items[i].Name != "Aged Brie" && 
+            Items[i].Name != "Backstage passes to a Justin Beiber concert")
         {
             if (Items[i].Quality > 0)
             {
